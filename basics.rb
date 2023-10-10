@@ -26,7 +26,7 @@ puts stream_movie title: "Batman"
 
 
 # splat arguments
-def customer_assignments *customers
+def customer_assignments *customers     # Aca, el argumento es una lista
     #"Assigning customers: #{customers}"
     customers.each do |customer|
         puts customer.upcase    
@@ -50,6 +50,7 @@ registration(
     password: "123456"
 )
 
+# **kwargs es una lista de argumentos
 def registration2(email:, password:, **kwargs)
     puts "Building account for #{email}"
 
